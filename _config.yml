@@ -76,7 +76,7 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
+# favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
@@ -234,7 +234,9 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
+# 站内头像 300x300
 avatar: https://raw.githubusercontent.com/Lee-Coderr/Lee-s-Blog/master/images/avatar.png
+# 在浏览器标签内的图标 60x60
 favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
 
 # Table Of Contents in the Sidebar
@@ -361,11 +363,10 @@ highlight_theme: normal
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
-# MathJax Support
+# 数学符号渲染
 mathjax:
   enable: true
-  per_page: true
-  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
 han: false
