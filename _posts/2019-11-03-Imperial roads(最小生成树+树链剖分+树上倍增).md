@@ -6,7 +6,7 @@ Author: Lee-Coderr
 categories: 
 - 数据结构|树链剖分
 - 数据结构|最小生成树
-tags: [最小生成树,树上倍增]
+tags: [最小生成树,树上倍增,树链剖分]
 comments: true
 toc: true
 pinned: true
