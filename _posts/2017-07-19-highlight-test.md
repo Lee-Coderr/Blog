@@ -48,6 +48,7 @@ end
 
 using namespace std;
 
+int a[][3] = {{1,2},{2,3},{3,4}};
 void foo(int arg1, int arg2)
 {
 
