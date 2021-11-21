@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: #2a3852;
+            }
+            #box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 300px;
+            }
+
+            #box h1 {
+                letter-spacing: 3px;
+                font-weight: 500;
+                color: #fff;
+                /* font-size: 5px; */
+            }
+
+            #time {
+                display: flex;
+                flex-direction: row;
+                line-height: 50px;
+            }
+
+            #time span {
+                font-size: 20px;
+                color: #fff;
+            }
+
+            #time strong {
+                text-align: center;
+                margin-left: 20px;
+                background-color: #3f5174;
+                border-radius: 10px;
+                width: 70px;
+                height: 50px;
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="box">
+            <h1> FROM BEGINNING OF LOVE:</h1>
+            <div id="time">
+                <span id="day">**天</span>
+                <strong><span id="hour">**时</span></strong>
+                <strong><span id="minute">**分</span></strong>
+                <strong><span id="second">**秒</span></strong>
+            </div>
+        </div>
+        <script src="common.js"></script>
+        <script>
+            var daySpan = my$('day');
+            var hourSpan = my$('hour');
+            var minuteSpan = my$('minute');
+            var secondSpan = my$('second');
+            TimeRow();
+            setInterval(TimeRow, 1000)
+
+            function TimeRow() {
+                var start = new Date('2021-10-5 0:13:0');
+                var end = new Date();
+                var time = getInterval(start, end);
+                setInnerText(daySpan, time.day+'天');
+                setInnerText(hourSpan, time.hour+'时');
+                setInnerText(minuteSpan, time.minute+'分');
+                setInnerText(secondSpan, time.second+'秒');
+            }
+        </script>
+    </body>
+
+</html>
